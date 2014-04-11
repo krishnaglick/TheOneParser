@@ -1,0 +1,9 @@
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\bin\Debug\TheOneParser.exe.config
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\bin\Debug\TheOneParser.exe
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\bin\Debug\TheOneParser.pdb
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\obj\Debug\TheOneParser.csprojResolveAssemblyReference.cache
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\obj\Debug\TheOneParser.Form1.resources
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\obj\Debug\TheOneParser.Properties.Resources.resources
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\obj\Debug\TheOneParser.csproj.GenerateResource.Cache
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\obj\Debug\TheOneParser.exe
+c:\users\prometheus\documents\visual studio 2012\Projects\VB\TheOneParser\TheOneParser\obj\Debug\TheOneParser.pdb
