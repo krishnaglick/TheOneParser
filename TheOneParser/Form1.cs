@@ -22,13 +22,14 @@ namespace TheOneParser
         public Form1()
         {
             InitializeComponent();
-            Hashtable h = new Hashtable();
-            Hashtable otherHash = new Hashtable();
+            Dictionary<String, int> h = new Dictionary<String, int>(0);
+            Dictionary<String, int> otherHash = new Dictionary<String, int>(0);
+            String badNames = "";
 
             for (int i = 1; i < leader.Length; i = i + 2)
             {
                 String[] temp = leader[i].Split('\t');
-                h.Add(temp[0].Trim(), temp[1].Replace("E", "0").Trim());
+                h.Add(temp[0].Trim(), Convert.ToInt32(temp[1].Replace("E", "0").Trim()));
             }
 
             foreach (String line in picks)
@@ -37,13 +38,17 @@ namespace TheOneParser
                 int score = 0;
                 foreach (String name in temp[1].Split(','))
                 {
-                    score += Convert.ToInt32(h[name]);
+                    if (h.ContainsKey(name))
+                        score += h[name.Trim()];
+                    else
+                        badNames += name + "\n";
                 }
                 otherHash.Add(temp[0], score);
             }
 
-            foreach (DictionaryEntry pair in otherHash)
-                richTextBox1.Text += pair.Key.ToString() + ": " + pair.Value.ToString() + "\n";
+            foreach (KeyValuePair<String, int> pair in otherHash)
+                richTextBox1.Text += pair.Key + ": " + pair.Value.ToString() + "\n";
+            richTextBox1.Text += "The following names had bets placed on them but had to score available.\n" + badNames;
         }
     }
 }
