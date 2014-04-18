@@ -22,8 +22,8 @@ namespace TheOneParser
         public Form1()
         {
             InitializeComponent();
-            Dictionary<String, int> h = new Dictionary<String, int>(0);
-            Dictionary<String, int> otherHash = new Dictionary<String, int>(0);
+            Dictionary<String, int> h = new Dictionary<String, int>();
+            SortedDictionary<String, int> otherHash = new SortedDictionary<String, int>();
             String badNames = "";
 
             for (int i = 1; i < leader.Length; i = i + 2)
